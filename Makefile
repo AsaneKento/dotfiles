@@ -2,7 +2,7 @@ SHELL=/bin/zsh
 
 # all command
 .PHONY: all
-all: start init finish
+all: start init brew finish
 
 # start os check
 .PHONY: start

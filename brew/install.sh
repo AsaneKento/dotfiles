@@ -16,6 +16,7 @@ if [ ! -f /opt/homebrew/bin/brew ] ; then
   echo ""
 fi
 
+# Homebrew setup
 echo ""
 echo "Execute brew doctor..."
 echo ""
@@ -28,6 +29,14 @@ echo ""
 echo "Execute brew upgrade..."
 echo ""
 which /opt/homebrew/bin/brew >/dev/null 2>&1 && brew upgrade --verbose
+
+#
+echo ""
+echo "Execute install .Brewfile..."
+echo ""
+ln -s -f -v ${PWD}/brew/.Brewfile ${HOME}/.Brewfile
+brew bundle --global
+
 
 echo ""
 echo "Execute brew cleanup..."
