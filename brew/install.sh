@@ -5,6 +5,7 @@ set -ue
 
 # Homebrew Setup
 if [ ! -f /opt/homebrew/bin/brew ] ; then
+  echo ""
   echo "Starting Install homebrew..."
   echo ""
 
