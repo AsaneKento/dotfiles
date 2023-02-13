@@ -2,7 +2,7 @@ SHELL=/bin/zsh
 
 # all command
 .PHONY: all
-all: start init brew nvim finish
+all: start init brew starship nvim finish
 
 # start os check
 .PHONY: start
@@ -18,6 +18,11 @@ init:
 .PHONY: brew
 brew:
 	brew/install.sh
+
+# starship install
+.PHONY: starship
+starship:
+	starship/install.sh
 
 # nvim install
 .PHONY: nvim

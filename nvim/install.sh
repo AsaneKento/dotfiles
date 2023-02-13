@@ -4,17 +4,17 @@
 set -ue
 
 echo ""
-echo "Execute brew doctor..."
+echo "Starting Setup NVIM..."
 echo ""
+
 if [ ! -d ${HOME}/.config/nvim ]; then
+  echo ""
+  echo "Execute create nvim folder..."
+  echo ""
   mkdir -p ${HOME}/.config/nvim;
 fi
 
 ln -s -f -v ${PWD}/nvim/init.vim ${HOME}/.config/nvim/init.vim
-
-echo ""
-echo "Execute brew doctor..."
-echo ""
 
 echo ""
 echo "## Completed Setup NVIM ##"
