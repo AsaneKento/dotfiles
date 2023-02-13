@@ -1,0 +1,19 @@
+# system
+.DS_Store
+.idea/
+
+# cache
+.bash_history
+.zsh_history
+.zcompcache
+.zcompdump
+.viminfo
+.emaxs.d/history
+
+# backup
+*~
+*.swp
+
+# secret file
+.ssh
+.sws
