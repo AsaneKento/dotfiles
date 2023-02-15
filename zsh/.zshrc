@@ -16,6 +16,11 @@ alias vi="nvim"
 alias vim="nvim"
 alias view="nvim -R"
 
+# brewfile
+alias brewfile update = "brew bundle dump --global --force"
+alias brewfile install = "brew bundle --global"
+
+# volta setting
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 

@@ -4,6 +4,10 @@ truncation_length = 5
 truncate_to_repo = false
 truncation_symbol = "…/"
 
+[character]
+success_symbol = ""
+error_symbol = ""
+
 [aws]
 symbol = "  "
 
@@ -90,4 +94,3 @@ symbol = " "
 
 [spack]
 symbol = "🅢 "
-
