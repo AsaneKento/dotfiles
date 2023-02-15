@@ -1,3 +1,9 @@
+[directory]
+read_only = " "
+truncation_length = 5
+truncate_to_repo = false
+truncation_symbol = "…/"
+
 [aws]
 symbol = "  "
 
@@ -12,12 +18,6 @@ symbol = " "
 
 [dart]
 symbol = " "
-
-[directory]
-read_only = " "
-truncation_length = 100
-truncate_to_repo = false
-truncation_symbol = "…/"
 
 [docker_context]
 symbol = " "
@@ -69,44 +69,6 @@ symbol = " "
 
 [nodejs]
 symbol = " "
-
-[os.symbols]
-Alpine = " "
-Amazon = " "
-Android = " "
-Arch = " "
-CentOS = " "
-Debian = " "
-DragonFly = " "
-Emscripten = " "
-EndeavourOS = " "
-Fedora = " "
-FreeBSD = " "
-Garuda = "﯑ "
-Gentoo = " "
-HardenedBSD = "ﲊ "
-Illumos = " "
-Linux = " "
-Macos = " "
-Manjaro = " "
-Mariner = " "
-MidnightBSD = " "
-Mint = " "
-NetBSD = " "
-NixOS = " "
-OpenBSD = " "
-openSUSE = " "
-OracleLinux = " "
-Pop = " "
-Raspbian = " "
-Redhat = " "
-RedHatEnterprise = " "
-Redox = " "
-Solus = "ﴱ "
-SUSE = " "
-Ubuntu = " "
-Unknown = " "
-Windows = " "
 
 [package]
 symbol = " "
