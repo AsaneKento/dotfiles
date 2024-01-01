@@ -10,6 +10,7 @@ eval "$(starship init zsh)"
 
 # alias
 alias reload='source $HOME/.zshrc'
+alias ll='ls -la'
 
 # neovim
 alias vi="nvim"
