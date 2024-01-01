@@ -1,5 +1,5 @@
 ""
-"" keybind 
+"" keybind
 ""
 inoremap <silent> jj <ESC>
 
@@ -69,7 +69,7 @@ let g:airline#extensions#default#layout = [
 let g:airline_section_c = '%t %M'
 let g:airline_section_z = get(g:, 'airline_linecolumn_prefix', '').'%3l:%-2v'
 let g:airline_theme = 'papercolor'
-let g:airline#extensions#hunks#non_zero_only = 1 
+let g:airline#extensions#hunks#non_zero_only = 1
 
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#show_buffers = 1
@@ -112,4 +112,3 @@ highlight GitGutterAdd ctermfg=green
 highlight GitGutterChange ctermfg=blue
 highlight GitGutterDelete ctermfg=red
 set updatetime=250
-
