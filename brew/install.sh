@@ -31,7 +31,7 @@ echo "Execute brew upgrade..."
 echo ""
 which /opt/homebrew/bin/brew >/dev/null 2>&1 && brew upgrade --verbose
 
-#
+# formulaのインストール
 echo ""
 echo "Execute install .Brewfile..."
 echo ""
