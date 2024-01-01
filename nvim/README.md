@@ -11,9 +11,3 @@ https://neovim.io/
 ```
 
 # 使用プラグイン
-
-## プラグインマネージャー(vim-plug)
-vim-plugを使用し、プラグイン管理をしています。
-初回起動後に `PlugInstall` のコマンドで全プラグインがインストールされます。
-### 公式
-https://github.com/junegunn/vim-plug

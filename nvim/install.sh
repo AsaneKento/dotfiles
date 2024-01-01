@@ -14,13 +14,15 @@ if [ ! -d ${HOME}/.config/nvim ]; then
   mkdir -p ${HOME}/.config/nvim;
 fi
 
-ln -s -f -v ${PWD}/nvim/init.vim ${HOME}/.config/nvim/init.vim
+echo ""
+echo "Execute install AstroNvim..."
+echo ""
+git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 
 echo ""
-echo "Execute install vim-plug..."
+echo "Execute install AstroNvim SetUp..."
 echo ""
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+git clone git@github.com:AsaneKento/astro-nvim.git ~/.config/nvim/lua/user
 
 echo ""
 echo "## Completed Setup NVIM ##"
