@@ -34,6 +34,10 @@ starship:
 nvim:
 	nvim/install.sh
 
+.PHONY: docker
+docker:
+	docker/install.sh
+
 # volta install
 .PHONY: volta
 volta:
