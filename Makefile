@@ -2,13 +2,20 @@ SHELL=/bin/zsh
 
 # all command 
 .PHONY: all
-all: start macos brew finish
+all: start macos shell brew finish
 
 # macos setting
 .PHONY: macos
 macos: 
 	@echo "\033[0;34mSetting up macOS...\033[0m"
 	@macOS/init.sh
+	@echo "\033[0;34mDone.\033[0m"
+
+# shell setting
+.PHONY: shell
+shell: 
+	@echo "\033[0;34mSetting up shell...\033[0m"
+	@shell/init.sh
 	@echo "\033[0;34mDone.\033[0m"
 
 # brew install
