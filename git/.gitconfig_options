@@ -1,0 +1,15 @@
+[commit]
+	template = ~/.commit_template
+
+[alias]
+	s = status
+	b = branch
+	l = log
+	cm = commit
+	ss = status -s
+	co = checkout
+	rb = rebase
+	st = stash
+	sh = show
+	pr = pull -r
+	ps = push
