@@ -18,12 +18,3 @@ echo "╚════██║██╔══╝     ██║   ██║   █
 echo "███████║███████╗   ██║   ╚██████╔╝██║"
 echo "╚══════╝╚══════╝   ╚═╝    ╚═════╝ ╚═╝"
 echo ""
-
-# Check operating system
-if [ "$(uname)" != "Darwin" ] ; then
-	echo "#################################"
-	echo "##### This OS isn't Support #####"
-	echo "#################################"
-  echo ""
-	exit 1
-fi

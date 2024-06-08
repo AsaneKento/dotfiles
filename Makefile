@@ -2,30 +2,28 @@ SHELL=/bin/zsh
 
 # all command 
 .PHONY: all
-all: start init brew finish
+all: start macos brew finish
 
-# start os check
-.PHONY: start
-start: 
-	@echo "\033[0;34mRun build_start.sh\033[0m"
-	@.bin/build_start.sh
-	@echo "\033[0;34mDone.\033[0m"
-
-# os setting
-.PHONY: init
-init: 
-	@echo "\033[0;34mRun init.sh\033[0m"
-	@.bin/init.sh
+# macos setting
+.PHONY: macos
+macos: 
+	@echo "\033[0;34mSetting up macOS...\033[0m"
+	@macOS/init.sh
 	@echo "\033[0;34mDone.\033[0m"
 
 # brew install
 .PHONY: brew
 brew:
-	brew/install.sh
-
-# finish check
-.PHONY: finish
-finish: 
-	@echo "\033[0;34mRun build_finish.sh\033[0m"
-	@.bin/build_finish.sh
+	@echo "\033[0;34mSetting up Homebrew...\033[0m"
+	@brew/install.sh
 	@echo "\033[0;34mDone.\033[0m"
+
+# start logo
+.PHONY: start
+start:
+	@utils/start.sh
+
+# finish logo
+.PHONY: finish
+finish:
+	@utils/finish.sh

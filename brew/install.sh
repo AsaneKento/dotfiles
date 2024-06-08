@@ -3,6 +3,8 @@
 # Error Check
 set -ue
 
+source ${PWD}/utils/check_os.sh
+
 # Homebrew Setup
 if [ ! -f /opt/homebrew/bin/brew ] ; then
   echo ""
