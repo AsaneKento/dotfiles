@@ -3,6 +3,8 @@
 # Error Check
 set -ue
 
+source ${PWD}/utils/check_os.sh
+
 echo ""
 echo "Starting Setup zsh..."
 echo ""
