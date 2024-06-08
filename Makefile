@@ -1,49 +1,31 @@
 SHELL=/bin/zsh
 
-# all command
+# all command 
 .PHONY: all
-all: start init zsh brew starship nvim volta finish
+all: start init brew finish
 
 # start os check
 .PHONY: start
-start:
-	.bin/build_start.sh
+start: 
+	@echo "\033[0;34mRun build_start.sh\033[0m"
+	@.bin/build_start.sh
+	@echo "\033[0;34mDone.\033[0m"
 
 # os setting
 .PHONY: init
-init:
-	.bin/init.sh
-
-# zsh install
-.PHONY: zsh
-zsh:
-	zsh/install.sh
+init: 
+	@echo "\033[0;34mRun init.sh\033[0m"
+	@.bin/init.sh
+	@echo "\033[0;34mDone.\033[0m"
 
 # brew install
 .PHONY: brew
 brew:
 	brew/install.sh
 
-# starship install
-.PHONY: starship
-starship:
-	starship/install.sh
-
-# nvim install
-.PHONY: nvim
-nvim:
-	nvim/install.sh
-
-.PHONY: docker
-docker:
-	docker/install.sh
-
-# volta install
-.PHONY: volta
-volta:
-	volta/install.sh
-
-# bild fin
+# finish check
 .PHONY: finish
-finish:
-	.bin/build_finish.sh
+finish: 
+	@echo "\033[0;34mRun build_finish.sh\033[0m"
+	@.bin/build_finish.sh
+	@echo "\033[0;34mDone.\033[0m"
