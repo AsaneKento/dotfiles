@@ -2,7 +2,7 @@ SHELL=/bin/zsh
 
 # all command 
 .PHONY: all
-all: start macos shell brew starship finish
+all: start macos shell brew starship volta finish
 
 # macos setting
 .PHONY: macos
@@ -23,6 +23,13 @@ shell:
 brew:
 	@echo "\033[0;34mSetting up Homebrew...\033[0m"
 	@brew/install.sh
+	@echo "\033[0;34mDone.\033[0m"
+
+# volta install
+.PHONY: volta
+volta:
+	@echo "\033[0;34mSetting up Volta...\033[0m"
+	@volta/install.sh
 	@echo "\033[0;34mDone.\033[0m"
 
 # starship install
