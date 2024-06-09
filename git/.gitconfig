@@ -1,3 +1,7 @@
+[user]
+	name = AsaneKento
+	email = 74521188+AsaneKento@users.noreply.github.com
+
 [commit]
 	template = ~/.commit_template
 
