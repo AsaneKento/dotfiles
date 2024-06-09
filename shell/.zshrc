@@ -6,6 +6,13 @@ alias ll='ls -la'
 alias bbu="brew bundle dump --global --force"
 alias bbi="brew bundle --global"
 
+# zsh-autosuggestions
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# zsh-autocomplete
+source /opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+# zsh-syntax-highlighting
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # starship
 eval "$(starship init zsh)"
 
