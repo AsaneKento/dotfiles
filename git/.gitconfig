@@ -17,3 +17,6 @@
 	sh = show
 	pr = pull -r
 	ps = push
+
+[core]
+	editor = vim
