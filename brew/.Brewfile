@@ -1,4 +1,5 @@
 tap "homebrew/bundle"
+brew "asdf"
 brew "colima"
 brew "docker"
 brew "docker-compose"
