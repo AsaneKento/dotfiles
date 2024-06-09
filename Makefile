@@ -2,7 +2,7 @@ SHELL=/bin/zsh
 
 # all command 
 .PHONY: all
-all: start macos shell brew volta starship git vim docker finish
+all: start macos shell brew volta starship git vim docker iterm finish
 
 ##
 ## Setup Default
@@ -70,6 +70,13 @@ vim:
 docker:
 	@echo "\033[0;34mSetting up Docker...\033[0m"
 	@docker/init.sh
+	@echo "\033[0;34mDone.\033[0m"
+
+# iterm setting
+.PHONY: iterm
+iterm:
+	@echo "\033[0;34mSetting up iTerm...\033[0m"
+	@iterm/init.sh
 	@echo "\033[0;34mDone.\033[0m"
 
 ##
